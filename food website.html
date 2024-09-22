@@ -1,0 +1,158 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Web</title>
+<style>
+    body {
+        font-family: Candara;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    header {
+        background-color: #ffffff;
+        color: #ffffff;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    nav a {
+        color: #948d8d;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        background-color: #000000;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    .hero {
+        background-image: url('https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/03/03140502/hero3-scaled.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: hsla(52, 21%, 86%, 0.693);
+        font-size: 3rem;
+        position: relative;
+    }
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-overlay h2 {
+        font-size: 4rem;
+        margin: 0;
+    }
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .card {
+        width: calc(33.33% - 20px);
+        margin-bottom: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    .card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .card .content {
+        padding: 15px;
+    }
+    .buy-now-button {
+        padding: 10px 20px;
+        background-color: #ff0000;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    .buy-now-button:hover {
+        background-color: #000000;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>FoodLicious</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+    <div class="hero-overlay">
+        <h1>FoodLicious</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="main-content">
+        <div class="card">
+            <img src="https://res.cloudinary.com/rainforest-cruises/images/c_fill,g_auto/f_auto,q_auto/w_1120,h_732,c_fill,g_auto/v1661347392/india-food-paratha/india-food-paratha-1120x732.jpg" alt="Indian">
+            <div class="content">
+                <h2>Indian Savoury</h2>
+                <p>Early diet in India mainly consisted of legumes, vegetables, fruits, grains, dairy products, and honey. .</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.foodrepublic.com/img/gallery/100-italian-fooddrink-words-and-phrases/intro-1684783348.jpg" alt="Dish 2">
+            <div class="content">
+                <h2>Italian Delights</h2>
+                <p>Typically, Italian dinner dishes include a variety of pasta, soups, risottos, and seafood..</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://i0.wp.com/erikos.sg/wp-content/uploads/2023/12/Grilled-Norwegian-Salmon-w-Teriyaki-Sauce.jpg?fit=1024%2C683&ssl=1" alt="Dish 3">
+            <div class="content">
+                <h2>European Foods</h2>
+                <p>The fried foods, high-fat dairy products, processed meats all in the European foods.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="file:///Users/matthew/food%20menu.html" class="button">View our menu page</a>
+</body>
+</html>
